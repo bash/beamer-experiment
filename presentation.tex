@@ -1,2 +1,31 @@
-\documentclass[utf8x]{beamer}
-\input{source/presentation.main.tex}
+\makeatletter
+\@ifclassloaded{beamer}{}{\documentclass[utf8x]{beamer}}
+\makeatother
+
+\usepackage{amsthm}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+  \end{frame}
+    
+\begin{frame}
+    \frametitle{There Is No Largest Prime Number} 
+    \framesubtitle{The proof uses \textit{reductio ad absurdum}.}
+
+    \begin{theorem}
+        There is no largest prime number.
+    \end{theorem}
+\end{frame}
+
+\begin{frame}<handout:0>
+    \frametitle{Not important} 
+    \framesubtitle{This slide is not included in the handout.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\(e = mc^2\)}
+\end{frame}
+
+\end{document}
